@@ -1,0 +1,262 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Verdana;
+}
+
+body {
+  background: url(img/logo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#mostrar {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+.menu li {
+  float: left;
+}
+
+.menu li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.menu li a:hover{
+  background-color: #111111;
+}
+
+.menu img{
+  max-height: 20px;
+  max-width: auto;
+}
+
+li.userMenu{
+  float: right;
+}
+
+ul.subMenu {
+  position: absolute;
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  width: 147px;
+  top: 35px;
+  right: 0px;
+}
+
+.subMenu li a{
+  display: block;
+  z-index: 20;
+  color: white;
+  text-align: center;
+  padding: 23px;
+  text-decoration: none;
+}
+
+.subMenu li a:hover{
+  background-color: #111111;
+}
+
+
+
+nav.categoryMenu{
+  text-align: center;
+  text-decoration: none;
+  background-color: #595959;
+}
+.categoryMenu ul{
+  list-style-type: none;
+  margin-top: 0px;
+  margin-left: 30px;
+  padding: 0;
+  overflow: hidden;
+
+}
+.categoryMenu li {
+  float: left;
+}
+.categoryMenu li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+.categoryMenu li input{
+  display:block;
+  margin-top: 13px;
+}
+div.categories{
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.categories a{
+  text-decoration: none;
+  font-size: x-large;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: #fb3f00;
+}
+
+ul.products li {
+  width: 300px;
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+
+}
+.products img{
+  height: 150px;
+  width: 150px;
+  border:2px solid #021a40;
+}
+.products a{
+  text-decoration: none;
+  text-shadow: -1px 0 #3d3c3c, 0 1px #000000d4, 1px 0 #000000bf, 0 -1px black;
+}
+h4.productName {
+  color: #181818;
+  font-size: large;
+}
+p.productDesc{
+  color: #101010;
+}
+p.price{
+  color: #fffe00;
+  font-size: xx-large;
+}
+div.product{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.product h4{
+  font-size: x-large;
+}
+.product img{
+  height: 300px;
+  width: auto;
+  border:2px solid #021a40;
+}
+div.productImage{
+  width: 30%;
+  float: left;
+}
+.productImage img{
+  max-width: 100%;
+  height: auto;
+}
+div.productInfo{
+  text-align: center;
+  font-size: large;
+  background-color:  #ffffff;
+  width: 68%;
+  border:2px solid #021a40;
+  float: right;
+}
+
+div.register{
+  border: 3px solid #021a40;
+  background-color: #ffffff;
+  opacity: 0.9;
+  margin: 20px auto;
+  max-width: 250px;
+}
+.register input{
+  opacity: 1;
+}
+
+.register form{
+  margin-left: 20px;
+}
+div.fancy{
+  border: 3px solid #021a40;
+  background-color: #ffffff;
+  opacity: 0.8;
+  margin: 20px auto;
+  max-width: 550px;
+}
+.fancy input{
+  opacity: 1.0;
+}
+
+.fancy form{
+  margin-left: 20px;
+}
+div.account{
+  border: 3px solid #021a40;
+  background-color: #ffffff;
+  opacity: 0.8;
+  margin: 20px auto;
+  max-width: 250px;
+}
+.account form{
+  margin-left: 20px;
+}
+div.cartPreview{
+  position: fixed;
+  border: 1px solid #000000;
+  background-color: #dddddd;
+  opacity: 1;
+  margin: 20px auto;
+  bottom: 10px;
+  right: 10px;
+}
+div.placeOrder{
+  text-align: center;
+}
+button.cartbutton{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+button.cartbutton:hover{
+  background-color: #1f4720;
+}
+button.orderbutton{
+  background-color: #4caf50eb;
+  border: 1px  black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+button.orderbutton:hover{
+  background-color: #4caf50eb;
+}
+.products{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	padding: 10px;
+}
+
+.productName{
+	text-align: center;
+}

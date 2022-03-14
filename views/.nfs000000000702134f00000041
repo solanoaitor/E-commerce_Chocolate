@@ -1,0 +1,16 @@
+<div id="txtHint">
+	</ul>
+		<ul class="products">
+	    <?php
+	    foreach($products as $prod){ ?>
+	      <li>
+	        <?php echo "<a href='index.php?accio=products&pid=$prod[0]'>"; ?>
+	        <?php echo "<img src= 'img/products/$prod[6]/$prod[7]'>"; ?>
+					<h4 class="productName"><?php echo "$prod[1]"; ?></h4>
+					<p class="productDesc"><?php echo "$prod[3]"; ?></p>
+	        <p class="price"><?php echo "$prod[5] €"; ?></p>
+	        </a>
+	      </li>
+	    <?php } ?>
+	</ul>
+</div>

@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Nice Sound"
+AuthUserFile /home/TDIW/tdiw-a4/public_html/.htpasswd
+Require valid-user

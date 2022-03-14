@@ -1,0 +1,47 @@
+
+/* popup*/
+.login{
+    left: 100px;
+    padding-left: 1080px;
+}
+
+.login article{
+    line-height: 0px;
+}
+
+.login article .btn-abrirLogin{
+    padding: 0 10px;
+    margin-bottom: 17px;
+    height: 20px; /*largo del boton Login*/
+    line-height: 20px; /* palabra escrita dentro del boton, posicion*/
+    border: none;
+    color: #fff;
+    background: #5E7DE3;
+    border-radius: 5px;
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+.login article .btn-abrirLogin:hover{
+    background: rgba(94,125,227, .9);
+}
+
+/* ------------------------- */
+/* POPUP */
+/* ------------------------- */
+
+.posicio {
+    background: rgba(0,0,0,.3);
+    position: fixed;
+    top: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+}

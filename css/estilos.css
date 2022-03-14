@@ -1,0 +1,218 @@
+*{
+	font-family: arial;
+	box-sizing:border-box;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+header{
+	text-align: center;
+	background: #404040;
+	color:#fff;
+	padding:5px;
+
+}
+
+/*Estil pop up*/
+
+.classPopup {
+	width: 100%;
+	max-width: 1250px;
+	margin: 0px;
+	text-align: right;
+	position: absolute;
+}
+
+.classPopup article {
+	line-height: 0px;
+}
+
+.classPopup article .abrirPopup {
+	padding: 0 10px;
+	margin-bottom: 17px;
+	height: 20px; /*largo del boton Registrar*/
+	line-height: 20px; /* palabra escrita dentro del boton, posicion*/
+	border: none;
+	color: #fff;
+	background: #5E7DE3;
+	border-radius: 5px;
+	font-family: arial, sans-serif;
+	font-size: 12px;
+	cursor: pointer;
+	transition: .3s ease all;
+	cursor: pointer;
+}
+
+.classPopup article .abrirPopup:hover {
+	background: rgba(94,125,227, .9);
+}
+
+
+/* ------------------------- */
+/* POPUP */
+/* ------------------------- */
+
+.overlay {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 1;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay.active {
+	visibility: visible;
+}
+
+.popup {
+	background: #F8F8F8;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 20px;
+	font-family: 'Montserrat', sans-serif;
+	padding: 10px;
+	text-align: center;
+	width: 500px;
+
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup .cerrarPopup {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #000;
+}
+
+.popup .cerrarPopup:hover {
+	color: #BBBBBB;
+}
+
+.popup h3 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	opacity: 0;
+}
+
+.popup h4 {
+	font-size: 26px;
+	font-weight: 300;
+	margin-bottom: 40px;
+	opacity: 0;
+}
+
+.popup form .contenedorInputs{
+	opacity: 0;
+}
+
+.popup form .contenedorInputs input { /*grandaria de donde se escriben los datos*/
+	width: 75%;
+	margin-bottom: 42px;
+	height: 32px;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+	border: 1px solid #BBBBBB;
+}
+
+.popup form .btnSubmit {
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #5E7DE3;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+.popup form .btnSubmit:hover {
+	background: rgba(94,125,227, .9);
+}
+
+/* ------------------------- */
+/* ANIMACIONES */
+/* ------------------------- */
+.popup.active {	transform: scale(1); opacity: 1; }
+.popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
+.popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
+.popup.active .contenedorInputs { animation: entradaInputs 1s linear 1s forwards; }
+
+@keyframes entradaTitulo {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaSubtitulo {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaInputs {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+
+.contenedor{
+	background: #FFF8F1;
+	padding: 10px;
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.contenedor div{
+	/* background-color: grey; */
+	padding: 5px;
+	margin: 20px;
+	text-align: center;
+	/*order: 2;
+	flex-grow: 1;*/
+
+}
+
+
+.contenedor div img{
+	/* background-color: blue; */
+
+}
+
